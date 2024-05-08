@@ -120,9 +120,12 @@ class MyApp extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 2,
-                    child: Image.network(
-                      products[index].image,
-                      fit: BoxFit.cover,
+                    child: Transform.rotate(
+                      angle: -15 * 3.14 / 180,
+                      child: Image.network(
+                        products[index].image,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ],
